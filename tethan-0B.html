@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alvaro Cuevas</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     
 </head>
 <body>
-
+  
     <div class="nav-container">
         <header>
             <a href="index.html" class="logo"><img src="images/logo.png" alt="ALVARO CUEVAS"></a>
@@ -32,9 +33,46 @@
         <div>
         </header>
     </div>
-    <div id="hive" class="hive off">
-        <img src="images/button3.png" alt="hive" id="main" onclick="change();">
-    </div>
     
+    <!-- Swiper -->
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/modelo/01skeleton.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/modelo/04mental.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/modelo/05sentimental.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/modelo/06espiritual.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/modelo/07astral.png" />
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    effect: "cube",
+    grabCursor: true,
+    cubeEffect: {
+      shadow: true,
+      slideShadows: true,
+      shadowOffset: 20,
+      shadowScale: 0.94,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+</script>
 </body>
 </html>
