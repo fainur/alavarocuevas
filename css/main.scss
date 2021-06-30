@@ -55,8 +55,20 @@ header {
             }
         }
     }
-video {
-    width: 100%;    
+
+.video-background {
+    background: #000;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
 }
 
 .hive {    
@@ -269,7 +281,6 @@ ul, li {
   top: 32%;
   left: 20%;  
 }
-
 #forma {
   border: none;
   background-color: black;
@@ -339,4 +350,214 @@ ul, li {
   position: absolute;
   top: 85%;
   left: 75%;  
+}
+#comunicacion {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: montserrat;  
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: justify;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 38%;
+  left: 22%;  
+}
+#emocion {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: montserrat;  
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: justify;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 54%;
+  left: 19%;  
+}
+#sexual {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: montserrat;  
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: justify;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 84%;
+  left: 24%;  
+}
+#creativo {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: montserrat;  
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: justify;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 42%;
+  left: 24%;  
+}
+#racional {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: montserrat;  
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: justify;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 61%;
+  left: 18%;  
+}
+#psicometria {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: montserrat;  
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: justify;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 89%;
+  left: 20%;  
+}
+#chamanes {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: montserrat;  
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: justify;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 35%;
+  left: 19%;  
+}
+#eneagrama {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: montserrat;  
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: justify;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 45%;
+  left: 19%;  
+}
+#experiencias {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: montserrat;  
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: justify;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 59%;
+  left: 13%;  
+}
+#aura {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: montserrat;  
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: justify;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 25%;
+  left: 22%;  
+}
+#arboles {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: montserrat;  
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: justify;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 36%;
+  left: 18%;  
+}
+#constelaciones {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: montserrat;  
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: justify;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 53.5%;
+  left: 23%;  
+}
+#geomancia {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: montserrat;  
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: justify;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 62%;
+  left: 13%;  
+}
+#sinestria {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: montserrat;  
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: justify;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 79%;
+  left: 18%;  
+}
+#informacion {
+  border: none;
+  background-color: black;
+  color: white;
+  font-family: montserrat;  
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: justify;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 22%;  
 }
