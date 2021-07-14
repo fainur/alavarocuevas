@@ -74,54 +74,67 @@ ul img {
   width: auto;
 }
 
-.video-background {
-  background: #000;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: -99;
-}
-
-.video-foreground,
-.video-background iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
-.hive {
-  padding-top: 10%;
+.coleccion {
+  position: relative;
   text-align: center;
 }
 
-.hive a {
-  font-weight: 700;
+.coleccion a {
+  text-decoration: none;
+}
+
+.menucolec {
+  position: relative;
+  text-align: center;
+  margin-top: 100px;
   text-transform: uppercase;
-  font-size: 18px;
   color: white;
 }
 
-.hive .tethan {
-  position: absolute;
-  top: 35.8%;
-  left: 58.3%;
+.menucolec a {
+  color: white;
 }
 
-.hive .mensaje {
+.top-left {
   position: absolute;
-  top: 59.4%;
-  left: 31.1%;
+  top: 8px;
+  left: 256px;
+  text-align: left;
 }
 
-.hive .descargar {
+.centered1 {
   position: absolute;
-  top: 59.4%;
-  left: 63.2%;
+  top: 50%;
+  left: 256px;
+  text-align: left;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 256px;
+  text-align: left;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 256px;
+  text-align: right;
+}
+
+.centered2 {
+  position: absolute;
+  top: 50%;
+  right: 256px;
+  text-align: right;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 256px;
+  text-align: right;
 }
 
 .downloads {
@@ -146,10 +159,10 @@ ul img {
   height: 50px;
   cursor: pointer;
   background: transparent;
-  border: 1px solid #ae111b;
+  border: 1px solid #5c4594;
   outline: none;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  -webkit-transition: .15s ease-in-out;
+  transition: .15s ease-in-out;
   text-transform: uppercase;
   font-family: Montserrat;
 }
@@ -157,7 +170,8 @@ ul img {
 .downloads .btn:hover {
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
-  background: #d6aa47;
+  background: #ae111b;
+  color: white;
 }
 
 .downloads .btn:hover svg {
@@ -196,9 +210,9 @@ ul, li {
 }
 
 .swiper-container {
-  width: 800px;
+  width: 500px;
   position: absolute;
-  top: 10%;
+  top: 15%;
   margin-left: 50px;
   margin-top: -150px;
 }
@@ -232,19 +246,29 @@ ul, li {
   width: 150px;
   height: 50px;
   cursor: pointer;
-  background: transparent;
-  border: 1px solid #ae111b;
+  background: #ae111b;
+  border: 2px solid #5c4594;
   outline: none;
-  -webkit-transition: 1s ease-in-out;
-  transition: 1s ease-in-out;
+  -webkit-transition: .15s ease-in-out;
+  transition: .15s ease-in-out;
   text-transform: uppercase;
   font-family: Montserrat;
+}
+
+.btn a {
+  text-decoration: none;
+  color: white;
 }
 
 .btn:hover {
   -webkit-transition: 1s ease-in-out;
   transition: 1s ease-in-out;
-  background: #d6aa47;
+  background: white;
+}
+
+.btn:hover a {
+  text-decoration: none;
+  color: black;
 }
 
 .btn:hover svg {
@@ -252,17 +276,15 @@ ul, li {
 }
 
 .btn span {
-  color: white;
   font-size: 18px;
   font-weight: 100;
 }
 
 .modelo img {
   display: block;
-  position: relative;
-  top: 50%;
-  left: 10%;
-  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
 }
 
 /* The Modal (background) */
@@ -318,14 +340,14 @@ ul, li {
   background-color: black;
   color: white;
   font-family: montserrat;
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
   text-align: justify;
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  top: 32%;
-  left: 20%;
+  top: 29%;
+  left: 28%;
 }
 
 #forma {
@@ -333,14 +355,14 @@ ul, li {
   background-color: black;
   color: white;
   font-family: montserrat;
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
   text-align: justify;
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  top: 46%;
-  left: 15%;
+  top: 38%;
+  left: 25%;
 }
 
 #huesos {
@@ -348,14 +370,14 @@ ul, li {
   background-color: black;
   color: white;
   font-family: montserrat;
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
   text-align: justify;
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  top: 75%;
-  left: 22%;
+  top: 60%;
+  left: 30%;
 }
 
 #ecosistemas {
@@ -363,14 +385,14 @@ ul, li {
   background-color: black;
   color: white;
   font-family: montserrat;
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
   text-align: right;
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  top: 31%;
-  left: 70%;
+  top: 27%;
+  left: 65%;
 }
 
 #tdh {
@@ -378,14 +400,14 @@ ul, li {
   background-color: black;
   color: white;
   font-family: montserrat;
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
   text-align: right;
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  top: 57%;
-  left: 79%;
+  top: 47%;
+  left: 71%;
 }
 
 #papiroflexia {
@@ -393,14 +415,14 @@ ul, li {
   background-color: black;
   color: white;
   font-family: montserrat;
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
   text-align: right;
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  top: 85%;
-  left: 75%;
+  top: 68%;
+  left: 68%;
 }
 
 #comunicacion {
@@ -408,14 +430,14 @@ ul, li {
   background-color: black;
   color: white;
   font-family: montserrat;
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
   text-align: justify;
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  top: 38%;
-  left: 22%;
+  top: 32%;
+  left: 30%;
 }
 
 #emocion {
@@ -423,14 +445,14 @@ ul, li {
   background-color: black;
   color: white;
   font-family: montserrat;
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
   text-align: justify;
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  top: 54%;
-  left: 19%;
+  top: 44%;
+  left: 28%;
 }
 
 #sexual {
@@ -438,14 +460,14 @@ ul, li {
   background-color: black;
   color: white;
   font-family: montserrat;
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
   text-align: justify;
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  top: 84%;
-  left: 24%;
+  top: 68%;
+  left: 31%;
 }
 
 #creativo {
@@ -453,14 +475,14 @@ ul, li {
   background-color: black;
   color: white;
   font-family: montserrat;
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
   text-align: justify;
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  top: 42%;
-  left: 24%;
+  top: 35%;
+  left: 32%;
 }
 
 #racional {
@@ -468,14 +490,14 @@ ul, li {
   background-color: black;
   color: white;
   font-family: montserrat;
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
   text-align: justify;
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  top: 61%;
-  left: 18%;
+  top: 50%;
+  left: 27%;
 }
 
 #psicometria {
@@ -483,14 +505,14 @@ ul, li {
   background-color: black;
   color: white;
   font-family: montserrat;
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
   text-align: justify;
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  top: 89%;
-  left: 20%;
+  top: 71%;
+  left: 28%;
 }
 
 #chamanes {
@@ -498,14 +520,14 @@ ul, li {
   background-color: black;
   color: white;
   font-family: montserrat;
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
   text-align: justify;
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  top: 35%;
-  left: 19%;
+  top: 30%;
+  left: 28%;
 }
 
 #eneagrama {
@@ -513,14 +535,14 @@ ul, li {
   background-color: black;
   color: white;
   font-family: montserrat;
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
   text-align: justify;
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  top: 45%;
-  left: 19%;
+  top: 37%;
+  left: 27%;
 }
 
 #experiencias {
@@ -528,14 +550,14 @@ ul, li {
   background-color: black;
   color: white;
   font-family: montserrat;
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
   text-align: justify;
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  top: 59%;
-  left: 13%;
+  top: 48%;
+  left: 23%;
 }
 
 #aura {
@@ -543,14 +565,14 @@ ul, li {
   background-color: black;
   color: white;
   font-family: montserrat;
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
   text-align: justify;
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  top: 25%;
-  left: 22%;
+  top: 22%;
+  left: 29%;
 }
 
 #arboles {
@@ -558,14 +580,14 @@ ul, li {
   background-color: black;
   color: white;
   font-family: montserrat;
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
   text-align: justify;
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  top: 36%;
-  left: 18%;
+  top: 31%;
+  left: 26%;
 }
 
 #constelaciones {
@@ -573,14 +595,14 @@ ul, li {
   background-color: black;
   color: white;
   font-family: montserrat;
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
   text-align: justify;
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  top: 53.5%;
-  left: 23%;
+  top: 44%;
+  left: 30%;
 }
 
 #geomancia {
@@ -588,14 +610,14 @@ ul, li {
   background-color: black;
   color: white;
   font-family: montserrat;
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
   text-align: justify;
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  top: 62%;
-  left: 13%;
+  top: 50%;
+  left: 23%;
 }
 
 #sinestria {
@@ -603,14 +625,14 @@ ul, li {
   background-color: black;
   color: white;
   font-family: montserrat;
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
   text-align: justify;
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  top: 79%;
-  left: 18%;
+  top: 63%;
+  left: 27%;
 }
 
 #informacion {
@@ -618,13 +640,13 @@ ul, li {
   background-color: black;
   color: white;
   font-family: montserrat;
-  font-size: 20px;
+  font-size: 15px;
   text-transform: uppercase;
   text-align: justify;
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  top: 50%;
-  left: 22%;
+  top: 42%;
+  left: 30%;
 }
 /*# sourceMappingURL=main.css.map */

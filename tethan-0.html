@@ -11,28 +11,28 @@
 </head>
 <body>
   
-    <div class="nav-container">
-        <header>
-            <a href="index.html" class="logo"><img src="images/logo.png" alt="ALVARO CUEVAS"></a>
-            <nav>
-                <ul>
-                    <li>
-                        <li><a href="2040.html" class=""><img src="images/2040.svg" alt="2040"></a></li>
-                        <li><a href="tethan-0.html" class=""><img src="images/tethan.svg" alt="tethan"></a></li>
-                        <li><a href="downloads.html" class=""><img src="images/download.svg" alt="download"></a></li>
-                    </li>
-                </ul>
-            </nav>
-        
-        <div class="social-header">
+  <div class="nav-container">
+    <header>
+        <a href="index.html" class="logo"><img src="images/logo.png" alt="ALVARO CUEVAS"></a>
+        <nav>
             <ul>
-                <li><a href="https://www.instagram.com/alvarocuevasdealba/" class=""><img src="images/soc-1.png" alt="instagram"></a></li>
-                <li><a href="https://www.facebook.com/profile.php?id=100063490603387" class=""><img src="images/soc-2.png" alt="facebook"></a></li>
-                <li><a href="https://alvarocuevas.com/" class=""><img src="images/soc-4.png" alt="youtube"></a></li>
+                <li>
+                    <li><a href="colecciones.html" class=""><img src="images/colecciones.svg" alt="colecciones"></a></li>
+                    <li><a href="tethan-0.html" class=""><img src="images/tethan.svg" alt="tethan"></a></li>
+                    <li><a href="downloads.html" class=""><img src="images/download.svg" alt="download"></a></li>
+                </li>
             </ul>
-        <div>
-        </header>
-    </div>
+        </nav>
+    
+    <div class="social-header">
+        <ul>
+            <li><a href="https://www.instagram.com/alvarocuevasdealba/" class=""><img src="images/soc-1.png" alt="instagram"></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100063490603387" class=""><img src="images/soc-2.png" alt="facebook"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCu37QB_mJK2Fveh2Amq9Hiw" class=""><img src="images/soc-4.png" alt="youtube"></a></li>
+        </ul>
+    <div>
+    </header>
+</div>
     
     <!-- Swiper -->
     <div class="swiper-container mySwiper">
@@ -41,7 +41,7 @@
           <img src="images/modelo/01skeleton.png" />
           <h1>campo físico</h1>
             <p>manifiesta la Consciencia de la forma, la percepción a través de nuestros sentidos de las características de tamaño, color, textura, geometría, estética, anatomía, grosor.</p>
-            <button class="btn"><a href="tethan-fisico.html">descubre más</a></button>
+            <button class="btn"><a href="tethan-fisico.html">descubre más</a></button>            
         </div>
         <div class="swiper-slide">
           <img src="images/modelo/05sentimental.png" />
@@ -74,26 +74,34 @@
             <button class="btn"><a href="tethan-akashico.html">descubre más</a></button>
         </div>
       </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
       <div class="swiper-pagination"></div>
     </div>
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    effect: "cube",
-    grabCursor: true,
-    cubeEffect: {
-      shadow: true,
-      slideShadows: true,
-      shadowOffset: 20,
-      shadowScale: 0.94,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-  });
-</script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "cube",
+      grabCursor: true,
+      loop: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+      pagination: {
+        el: ".swiper-pagination",        
+        clickable: true,
+      },
+    });
+  </script>
 </body>
 </html>

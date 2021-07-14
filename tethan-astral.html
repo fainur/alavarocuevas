@@ -16,7 +16,7 @@
             <nav>
                 <ul>
                     <li>
-                        <li><a href="2040.html" class=""><img src="images/2040.svg" alt="2040"></a></li>
+                        <li><a href="colecciones.html" class=""><img src="images/colecciones.svg" alt="colecciones"></a></li>
                         <li><a href="tethan-0.html" class=""><img src="images/tethan.svg" alt="tethan"></a></li>
                         <li><a href="downloads.html" class=""><img src="images/download.svg" alt="download"></a></li>
                     </li>
@@ -27,7 +27,7 @@
             <ul>
                 <li><a href="https://www.instagram.com/alvarocuevasdealba/" class=""><img src="images/soc-1.png" alt="instagram"></a></li>
                 <li><a href="https://www.facebook.com/profile.php?id=100063490603387" class=""><img src="images/soc-2.png" alt="facebook"></a></li>
-                <li><a href="https://alvarocuevas.com/" class=""><img src="images/soc-4.png" alt="youtube"></a></li>
+                <li><a href="https://www.youtube.com/channel/UCu37QB_mJK2Fveh2Amq9Hiw" class=""><img src="images/soc-4.png" alt="youtube"></a></li>
             </ul>
         <div>
         </header>
@@ -62,13 +62,7 @@
                     <br><br>
                     <img src="images/mockup/fis2.jpg" alt="eye"> <br><br>
                 </p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste odit, a reprehenderit quod eos minus repellat, hic voluptates accusantium corrupti quos at debitis voluptate officiis vero? Veritatis provident amet sunt.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quae nesciunt esse culpa repellat fuga temporibus quos! Ex, nisi provident labore sit sint aut iure, nihil distinctio praesentium molestiae fugit.
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, ab? Vitae neque amet maxime vero aut adipisci, itaque debitis nobis reiciendis unde perferendis, exercitationem iure fuga animi! Nulla, sit nobis?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, cum iste impedit ullam voluptatem sunt commodi ipsa quia unde deleniti facere eaque quo iure obcaecati! Voluptatem eius accusamus beatae incidunt. <br>
-                    <br><br>
-                    <img src="images/mockup/fis1.png" alt="eye">
-                </p>
+                
             </div>        
 
     </div>
@@ -94,9 +88,6 @@
                 span_close_multi[i].setAttribute('data-index', i);
             }
         }
-
-
-
         for (i = 0; i < modal_btn_multi.length; i++)
         {
             modal_btn_multi[i].onclick = function() {
@@ -109,19 +100,15 @@
                 var ElementIndex = this.getAttribute('data-index');
                 modalparent[ElementIndex].style.display = "none";
             };
-
         }
-
         window.onload = function() {
 
             setDataIndex();
         };
-
         window.onclick = function(event) {
             if (event.target === modalparent[event.target.getAttribute('data-index')]) {
                 modalparent[event.target.getAttribute('data-index')].style.display = "none";
             }
-
             // OLD CODE
             if (event.target === modal) {
                 modal.style.display = "none";
