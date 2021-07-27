@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
+/* Estilo general del sitio */
 body {
     height: 100vh;
     margin: 0;
@@ -17,6 +17,27 @@ a {
     color: black;
 }
 
+/* Estilos en el header */
+.navbar {
+  width: 100%;
+  background-color: black;
+  overflow: auto;
+}
+.navbar a {
+  float: left;
+  padding-top: 50px;  
+  width: 14%; /* Four links of equal widths */
+  text-align: center;
+}
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
 .nav-container {
     background-color: black;
     display: grid;
@@ -31,13 +52,13 @@ header {
     }
     ul {
         display: flex;
-
+        
         a {
             display: block;
             padding: 0;
         }
         img {
-            width: 65%;
+            width: 100%;
         }
     }
     .social-header {
@@ -56,6 +77,7 @@ header {
         }
     }
 
+/* Estilos en sitio menu colecciones */
 .coleccion {
   position: relative;
   text-align: center;
@@ -63,7 +85,6 @@ header {
       text-decoration: none;  
   }
 }
-
 .menucolec {
   position: relative;
   text-align: center;
@@ -74,7 +95,6 @@ header {
       color: white;
   }
 }
-
 .top-left {
   position: absolute;
   top: 8px;
@@ -93,7 +113,6 @@ header {
   left: 256px;
   text-align: left;
 }
-
 .top-right {
   position: absolute;
   top: 8px;
@@ -113,6 +132,7 @@ header {
   text-align: right;
 }
 
+/* Estilos en sitio descargas */
 .downloads {
     background-color: white;
     text-align: center;
@@ -169,34 +189,30 @@ header {
   width: 800px;
   padding: 30px;
 }
-
 ul, li {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
+/* Estilos en sitio menu tethan */
 .swiper-container {
     width: 500px;
     position: absolute;
     top: 15%;
     margin-left: 50px;
-    margin-top: -150px;
-    
-  }
-  
+    margin-top: -150px;    
+  }  
   .swiper-slide {
     background-position: center;
     background-size: cover;
     color: white;    
     text-transform: uppercase;
-  }
-  
+  }  
   .swiper-slide img {
     display: block;
     width: 100%;
   }
-
 .slider1-text{
     max-width: 50%;
     position: absolute;
@@ -208,7 +224,6 @@ ul, li {
     text-align: justify;
     padding: 0 3rem;
 }
-
 .btn {
     width: 150px;
     height: 50px;
@@ -242,6 +257,7 @@ ul, li {
     font-weight: 100;
   }
 
+/* Estilos en sitios tethan experiencia */
 .modelo {
   img {
     display: block;
@@ -250,7 +266,6 @@ ul, li {
     width: 60%;
   }  
 }
-
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
@@ -287,6 +302,7 @@ ul, li {
   cursor: pointer;
 }
 
+/* Experiencias y Colecciones en modelos del ser */
 #sentidos {
   border: none;
   background-color: black;
@@ -382,7 +398,7 @@ ul, li {
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  top: 32%;
+  top: 28%;
   left: 30%;  
 }
 #emocion {
@@ -396,8 +412,8 @@ ul, li {
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  top: 44%;
-  left: 28%;  
+  top: 38%;
+  left: 27%;  
 }
 #sexual {
   border: none;
@@ -410,7 +426,7 @@ ul, li {
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  top: 68%;
+  top: 52%;
   left: 31%;  
 }
 #creativo {
@@ -424,8 +440,8 @@ ul, li {
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  top: 35%;
-  left: 32%;  
+  top: 39%;
+  left: 31%;  
 }
 #racional {
   border: none;
@@ -438,8 +454,8 @@ ul, li {
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  top: 50%;
-  left: 27%;  
+  top: 25%;
+  left: 32%;  
 }
 #psicometria {
   border: none;
@@ -452,8 +468,8 @@ ul, li {
   cursor: pointer;
   display: inline-block;
   position: absolute;
-  top: 71%;
-  left: 28%;  
+  top: 48%;
+  left: 31%;  
 }
 #chamanes {
   border: none;
@@ -580,4 +596,44 @@ ul, li {
   position: absolute;
   top: 42%;
   left: 30%;  
+}
+
+/* Colecciones y Subcolecciones galerias */
+.subcoleccion {
+  background-color: white;
+  text-align: justify;
+  font-size: 20px;
+  padding: 50px;
+  justify-content: space-between;
+}
+.row {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+/* Create four equal columns that sits next to each other */
+.gallerycolumn {
+  flex: 25%;
+  max-width: 33%;
+  padding: 0 5px;
+}
+.gallerycolumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .gallerycolumn {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .gallerycolumn {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
